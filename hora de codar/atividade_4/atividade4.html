@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+
+    <script>
+
+        /*Considerando a figura acima, escreva um programa para cada forma que calcule e exiba em tela
+         cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.*/
+
+         var escolha = parseInt(prompt('Selecione uma opção: 1) Retângulo   2) Quadrado  3) Losango   4) Trapézio   5) Paralelogramo   6) Triângulo   7) Círculo'));
+
+			if (escolha === 1) {
+				retangulo();
+			} else if (escolha === 2) {
+				quadrado();
+			} else if (escolha === 3) {
+				losango();
+			} else if (escolha === 4) {
+				trapezio();
+            } else if (escolha === 5) {
+                paralelogramo();
+            } else if (escolha === 6){
+                triangulo();
+            } else if (escolha === 7){
+                circulo();
+			} else {
+				erro();
+			}
+
+            function retangulo() {
+                var rbase = prompt("Infomer a base");
+                var raltura = prompt("Informe a altura");
+                var resultado = (rbase * raltura);
+                
+                alert(resultado);
+            }
+
+            function quadrado() {
+                var lado = prompt("Informe o valor de um dos lados");
+                var resulta = (lado **= 2);
+
+                alert(resulta);
+            }
+
+            function losango() {
+                var diagoMaior = prompt("Informe a maior diagonal ");
+                var diagoMenor = prompt("Informe a menor diagonal ");
+                var result = (diagoMaior * diagoMenor / 2);
+
+                alert(result);
+            }
+
+            function trapezio() {
+                var tbaseMaior = prompt("Informe a base maior");
+                var tbaseMenor = prompt("Informe a base menor");
+                var altura_t = prompt("Informe a altura");
+                var traresultado = ((tbaseMaior + tbaseMenor) * altura_t / 2);
+
+                alert(traresultado)
+            }
+
+            function paralelogramo() {
+                var pbase = prompt("Informe a base");
+                var paltura = prompt("Informe a altura");
+                var resultado = (pbase * paltura);
+
+                alert(resultado);
+            }
+
+            function triangulo() {
+                var tbase = prompt("Informe a base");
+                var taltura = prompt("Informe a altura");
+                var resposta = (tbase * taltura / 2);
+
+                alert(resposta)
+            }
+
+            function circulo() {
+                var area = prompt("Digite a Área");
+                var raio = prompt("Digite o raio do círculo");
+                var total = (area = 3.14 * raio ** 2);
+
+                alert(total);
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
