@@ -1,2 +1,2 @@
 # Hora_de_codar
-Exercícios de JavaScript
+Exercícios de JavaScript dentro de arquivos HTML
